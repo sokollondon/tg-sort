@@ -2,17 +2,19 @@
 // @name         Tg Sort by reactions
 // @name:ru      Tg Сортировка по реакциям
 // @name:zh      Tg 按反应排序
-// @version      0.1.3
+// @version      0.1.4
 // @description  Allows you to find posts with a lot of reactions (likes) in Telegram
 // @description:ru Позволяет найти сообщения с наибольшим количеством реакций (лайков) в Телеграм
 // @description:zh 允许您在电报中找到有很多反应（喜欢）在 Telegram
 // @author       sokollondon
-// @match        https://web.telegram.org/z/*
+// @match        https://web.telegram.org/a/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=telegram.org
 // @require      http://code.jquery.com/jquery-3.3.1.min.js
 // @require      https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.3/jquery.scrollTo.min.js
 // @grant        none
 // @namespace    https://gist.github.com/sokollondon/4be0d13f33a371895308ed7b1dc15fcf
+// @updateURL    https://gist.github.com/sokollondon/4be0d13f33a371895308ed7b1dc15fcf/raw/TgSortByReactions.user.js
+// @downloadURL  https://gist.github.com/sokollondon/4be0d13f33a371895308ed7b1dc15fcf/raw/TgSortByReactions.user.js
 // ==/UserScript==
 
 (function() {
@@ -23,10 +25,11 @@
     #sBtn{top: 111px;right: 8px;}
 }
     `;
-    $('body').prepend('<style>'+style+'</style>');
+    let $body = $('body');
+    $body.prepend('<style>'+style+'</style>');
 
     //Btn
-    $('body').prepend("<div id='sBtn' title='Сортировать по количеству реакций'></div>");
+    $body.prepend("<div id='sBtn' title='Сортировать по количеству реакций'></div>");
 
     $('#sBtn').click(function() {
         $('.message-date-group').each(function() {//add date to msg
