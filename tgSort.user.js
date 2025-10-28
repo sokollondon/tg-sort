@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         Tg Sort by reactions
-// @name:ru      Tg Сортировка по реакциям
-// @name:zh      Tg 按反应排序
-// @version      0.1.4
+// @name         Telegram Web Sort by reactions
+// @name:ru      Telegram Web Сортировка по реакциям
+// @name:zh      Telegram Web 按反应排序
+// @version      0.1.5
 // @description  Allows you to find posts with a lot of reactions (likes) in Telegram
 // @description:ru Позволяет найти сообщения с наибольшим количеством реакций (лайков) в Телеграм
 // @description:zh 允许您在电报中找到有很多反应（喜欢）在 Telegram
@@ -12,9 +12,9 @@
 // @require      http://code.jquery.com/jquery-3.3.1.min.js
 // @require      https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.3/jquery.scrollTo.min.js
 // @grant        none
-// @namespace    https://gist.github.com/sokollondon/4be0d13f33a371895308ed7b1dc15fcf
-// @updateURL    https://gist.github.com/sokollondon/4be0d13f33a371895308ed7b1dc15fcf/raw/TgSortByReactions.user.js
-// @downloadURL  https://gist.github.com/sokollondon/4be0d13f33a371895308ed7b1dc15fcf/raw/TgSortByReactions.user.js
+// @namespace    https://github.com/sokollondon/tg-sort
+// @updateURL    https://github.com/sokollondon/tg-sort/raw/refs/heads/main/tgSort.user.js
+// @downloadURL  https://github.com/sokollondon/tg-sort/raw/refs/heads/main/tgSort.user.js
 // ==/UserScript==
 
 (function() {
@@ -29,7 +29,7 @@
     $body.prepend('<style>'+style+'</style>');
 
     //Btn
-    $body.prepend("<div id='sBtn' title='Сортировать по количеству реакций'></div>");
+    $body.prepend("<div id='sBtn' title='Sort by number of likes'></div>");
 
     $('#sBtn').click(function() {
         $('.message-date-group').each(function() {//add date to msg
@@ -39,9 +39,14 @@
             });
         });
         $('.message-list-item').detach().sort(function(a, b) {
-            let $aQty = $(a).find('.Reactions .Button:first').text2qty(),
-                $bQty = $(b).find('.Reactions .Button:first').text2qty();
-            return $aQty - $bQty;
+            let aQty = 0, bQty = 0;
+            aQty = $(a).find('.Reactions .Button').get().reduce((sum, button) => {
+                return sum + $(button).text2qty();
+            }, 0);
+            bQty = $(b).find('.Reactions .Button').get().reduce((sum, button) => {
+                return sum + $(button).text2qty();
+            }, 0);
+            return aQty - bQty;
         }).appendTo($('.messages-container'));
         $('.MessageList').scrollTo($('.message-list-item:last .Reactions'),{axis:'y'});
     });
@@ -62,6 +67,6 @@
     }
 
     function toFloat(str) {
-        return str.replace(/[^0-9.,]/g,'').replace(/[,]/g,'.');
+        return parseFloat(str.replace(/[^0-9.,]/g,'').replace(/[,]/g,'.'));
     }
 })();
