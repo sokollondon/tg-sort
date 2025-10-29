@@ -1,7 +1,7 @@
 ![img](https://user-images.githubusercontent.com/11624566/204213295-8bda29e0-0185-47d5-920f-0f79445da322.png)
 Язык: [EN](https://gist.github.com/sokollondon/4be0d13f33a371895308ed7b1dc15fcf#gistcomment-4383277), [РУ](https://gist.github.com/sokollondon/4be0d13f33a371895308ed7b1dc15fcf#gistcomment-4385558)
 
-Сортировка по реакциям. Позволяет найти сообщения с наибольшим количеством реакций (лайков) :+1:.
+Сортировка по реакциям. Помогает найти сообщения (посты) с наибольшим количеством реакций (лайков) :+1:.
 Скрипт добавляет в telegram кнопку для сортировки сообщений (до 80 шт.).
 
 ## Инструкция
@@ -13,7 +13,7 @@
 ### Установка
 
 1. Установите расширение для браузера [Tampermonkey](https://tampermonkey.net/).
-2. Затем установите [скрипт для сортировки](https://greasyfork.org/scripts/455750-tg-sort-by-reactions) (зелёная кнопка). Или добавьте [код](https://github.com/sokollondon/tg-sort/blob/main/tgSort.user.js) вручную.
+2. Затем установите [скрипт для сортировки](https://greasyfork.org/scripts/455750) (зелёная кнопка). Или добавьте [код](https://github.com/sokollondon/tg-sort/blob/main/tgSort.user.js) вручную.
 
 ### Использование
 
@@ -33,7 +33,7 @@
 1. Установите браузер [Kiwi](https://play.google.com/store/apps/details?id=com.kiwibrowser.browser)
    (нужен, т.к. не все мобильные браузеры разрешают устанавливать расширения)
 2. Установите в нём расширение [Tampermonkey](https://tampermonkey.net/).
-3. Затем установите [скрипт для сортировки](https://greasyfork.org/scripts/455750-tg-sort-by-reactions) (зелёная кнопка)
+3. Затем установите [скрипт для сортировки](https://greasyfork.org/scripts/455750) (зелёная кнопка)
 
 ### Использование
 
