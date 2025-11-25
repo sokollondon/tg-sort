@@ -34,7 +34,7 @@
 // @name:uk      Telegram Web Сортування за реакціями
 // @name:ug      Telegram Web ئىنكاسلار بويىچە تەرتىپلەش
 // @name:vi      Telegram Web Sắp xếp theo lượt tương tác
-// @version      0.1.5
+// @version      0.1.6
 // @description  Helps you find messages (posts) with the most reactions (likes) in Telegram
 // @description:ru Помогает найти сообщения (посты) с наибольшим количеством реакций (лайков) в Телеграм
 // @description:zh-CN  帮助您查找Telegram中回应（点赞）最多的消息（帖子）
@@ -83,7 +83,8 @@
 
 (function() {
     let style = `
-#sBtn{position:fixed;top:73px;right:16px;width:45px;height:45px;padding:5px;border-radius:10px;text-align:center;font-size:20px;padding-top:5px;z-index:2;opacity: .7;background:url(https://cdn0.iconfinder.com/data/icons/font-awesome-solid-vol-4/512/sort-amount-down-alt-64.png) no-repeat center center;background-size:32px;background-color:#fff;cursor:pointer;}
+#sBtn{position:fixed;top:73px;right:16px;width:45px;height:45px;padding:5px;border-radius:10px;text-align:center;font-size:20px;padding-top:5px;z-index:2;opacity: .7;background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtGVYSWZJSSoACAAAAAYAEgEDAAEAAAABAAAAGgEFAAEAAABWAAAAGwEFAAEAAABeAAAAKAEDAAEAAAACAAAAEwIDAAEAAAABAAAAaYcEAAEAAABmAAAAAAAAAEgAAAABAAAASAAAAAEAAAAGAACQBwAEAAAAMDIxMAGRBwAEAAAAAQIDAACgBwAEAAAAMDEwMAGgAwABAAAA//8AAAKgBAABAAAAQAAAAAOgBAABAAAAQAAAAAAAAABuEYT5AAABkklEQVR4nO2bPU7EMBBGX74OcQIKjgFnYMVPh1YcZ7kMFQeh4g4sghtQYhSJaoWCHduJZ8dPcud8sZ3VTPZJgU6n05nmGngHwsHYA5uCeaXyi7OfWORb4bwS+UkMEXNCgYyUvNz8JIRzhHOEc7TCPccOkFIwVyf8M1LZRHaCsQNccYRdoCmEc4RzhHOEc4RzhHOEc7TCPWN9QDO+IBR+E0zxAdV9wWDAB1DzTVQ4RzhHOEeN+4AmfEFYyQcs4guGiDndBxwzwjnCOcI5wjnCOcI5MuwDFvMFoWEfkO0LhsgDyM1IySvN5PqEc4RzhHNk3Acs4gtCoz6gmC+4Az4qLGDMvMUAHxWfwpI/99k1YKiYb8IW3QPfFZ7+mLnFCLsKB/CIIQbgqeDmny2+Y5wALwU2/wqcYpSzzB79CZxjnAvga8bmx2suG/IBWb5gm9gZxrkPDfqALF+wq1TxQ2MjuzOkVnwzBxDTGeZUfFMHMNUZ5lZ8cwfwV2eIrfimi+AhN78X7DP/5i7lA5r4HqHT6dA0P32R2X1NXS7nAAAAAElFTkSuQmCC") no-repeat center center;
+background-size:32px;background-color:#fff;cursor:pointer;}
 .theme-dark #sBtn{background-color: #a9a9a9;}
 @media screen and (max-width: 600px) {
     #sBtn{top: 111px;right: 8px;}
