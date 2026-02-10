@@ -1,44 +1,45 @@
-![img](https://user-images.githubusercontent.com/11624566/204213295-8bda29e0-0185-47d5-920f-0f79445da322.png)
-Язык: [EN](https://gist.github.com/sokollondon/4be0d13f33a371895308ed7b1dc15fcf#gistcomment-4383277), [РУ](https://gist.github.com/sokollondon/4be0d13f33a371895308ed7b1dc15fcf#gistcomment-4385558)
+![img](https://raw.githubusercontent.com/sokollondon/tg-sort/refs/heads/main/docs/img-en.png)
+Language: [EN](https://github.com/sokollondon/tg-sort/blob/main/README.md), [РУ](https://github.com/sokollondon/tg-sort/blob/main/docs/README-ru.md)
 
-Сортировка по реакциям. Помогает найти сообщения (посты) с наибольшим количеством реакций (лайков) :+1:.
-Скрипт добавляет в telegram кнопку для сортировки сообщений (до 80 шт.).
+Sort by reactions. Helps you find messages (posts) with the highest number of reactions (likes) :+1:.
+The script adds a button to Telegram for sorting messages (up to 80 items).
 
-## Инструкция
+## Instructions
 
-Как установить и использовать:
+How to install and use:
 
-# На компьютере (проще)
+# On a computer (easier)
 
-### Установка
+### Installation
 
-1. Установите расширение для браузера [Tampermonkey](https://tampermonkey.net/).
-2. Затем установите [скрипт для сортировки](https://greasyfork.org/scripts/455750) (зелёная кнопка). Или добавьте [код](https://github.com/sokollondon/tg-sort/blob/main/tgSort.user.js) вручную.
+1. Install the [Tampermonkey](https://tampermonkey.net/) browser extension.
+2. Then install the [sorting script](https://greasyfork.org/scripts/455750) (green button). Or add the [code](https://github.com/sokollondon/tg-sort/blob/main/tgSort.user.js) manually.
 
-### Использование
+### Usage
 
-1. Откройте любой канал или группу в [https://web.telegram.org](https://web.telegram.org/a/)
-2. Нажмите кнопку `Page Up` несколько раз, чтобы загрузить больше сообщений.
-Или используйте колесо мыши. Но не используйте кнопку ~~Home~~, т.к. не все сообщения успеют загрузиться.
-3. Нажмите новую кнопку для сортировки. Все сообщения будут отсортированы по количеству реакций.
+1. Open any channel or group at [https://web.telegram.org/a/](https://web.telegram.org/a/)
+2. Press the `Page Up` button several times to load more messages.
+   Or use the mouse wheel. But do not use the ~~Home~~ button, as not all messages will have time to load.
+3. Click the new button to sort. All messages will be sorted by the number of reactions.
 
-> При возникновении проблем — обновите страницу.
+> If problems occur — refresh the page.
 
 - - - -
 
-# На мобильных устройствах
+# On mobile devices
 
-### Установка
+### Installation
 
-1. Установите браузер [Kiwi](https://play.google.com/store/apps/details?id=com.kiwibrowser.browser) 
-(нужен, т.к. не все мобильные браузеры разрешают устанавливать расширения)
-2. Установите в нём расширение [Tampermonkey](https://tampermonkey.net/).
-3. Затем установите [скрипт для сортировки](https://greasyfork.org/scripts/455750) (зелёная кнопка)
+1. Install the [Lemur Browser](https://play.google.com/store/apps/details?id=com.lemurbrowser.exts)
+   (needed because not all mobile browsers allow installing extensions)
+2. Install the [Tampermonkey](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) extension in it.
+3. Enable developer mode in the browser: open the extensions page `chrome://extensions/` and activate the "Developer mode" toggle at the top.
+4. Then install the [sorting script](https://greasyfork.org/scripts/455750) (green button)
 
-### Использование
+### Usage
 
-1. Откройте любой канал или группу в [https://web.telegram.org](https://web.telegram.org/a/)
-2. Пролистайте, чтобы загрузить больше сообщений.
-3. Нажмите новую кнопку для сортировки. Все сообщения будут отсортированы по количеству реакций.
+1. Open any channel or group at [https://web.telegram.org/a/](https://web.telegram.org/a/)
+2. Scroll to load more messages.
+3. Click the new button to sort. All messages will be sorted by the number of reactions.
 
-> При возникновении проблем — обновите страницу.
+> If problems occur — refresh the page.
